@@ -35,6 +35,8 @@ void pass(int fd);
 
 void quit(int fd);
 
+void noop(int fd);
+
 typedef void (*messages[])(int);
 
 enum MESSAGES_CODES {
@@ -42,5 +44,6 @@ enum MESSAGES_CODES {
     USER,
     PASS,
     QUIT,
+    NOOP,
 };
 #endif //NWP_MYFTP_2019_FTP_H
